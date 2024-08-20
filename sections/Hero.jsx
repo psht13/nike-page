@@ -34,12 +34,10 @@ const Hero = () => {
         >
           {statistics.map((stat, id) => (
             <div key={id}>
-              <p
-                className="text-4xl font-palanquin font-bold"
-              >
-                {stat.value}
+              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+              <p className="leading-7 font-montserrat text-slate-gray">
+                {stat.label}
               </p>
-              <p>{stat.label}</p>
             </div>
           ))}
         </div>
